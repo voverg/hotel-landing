@@ -10,8 +10,48 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+
+    <!-- Начало секции с бургер меню -->
+    <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <a href="#main" class="burger-menu__link">Главная</a>
+            <a href="#section-2" class="burger-menu__link">section 2</a>
+            <a href="#section-3" class="burger-menu__link">section 3</a>
+            <a href="#section-4" class="burger-menu__link">section 4</a>
+            <a href="#section-5" class="burger-menu__link">section 5</a>
+            <a href="#section-6" class="burger-menu__link">section 6</a>
+        </nav>
+
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <!-- Конец секции с бургер меню -->
+
+    <header id='main'>
         <div class="container center">
+            <div class="row">
+                <div class="col-3 logo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <nav class="col-6 main-nav">
+                    <ul class="row">
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                        <li class="col-2"><a href="#" class="main-nav-item">item-1</a></li>
+                    </ul>
+                </nav>
+                <div class="col-3 tel">
+                    <p>Позвоните нам сегодня <br>
+                        +7-999-999-99-99</p>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-6 right">
                     <div class="right-side">
@@ -85,6 +125,7 @@
     </header>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

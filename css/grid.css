@@ -68,7 +68,7 @@
     .col-3,
     .col-4,
     .col-5 {
-        width: 33.333%;
+        width: 50%;
     }
     
     .col-6 {
@@ -78,7 +78,7 @@
     .col-7,
     .col-8,
     .col-9 {
-        width: 66.666%;
+        width: 50%;
     }
 
     .col-10,
