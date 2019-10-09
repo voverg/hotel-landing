@@ -1,1 +1,2 @@
-This is a testing landing to learn layouts.
+Это тестовый лендинг для прктики вёрстки.
+Посмотреть, как он выглядит можно на Github Pages по [этой](https://voverg.github.io/hotel-landing/ "Посмотреть лендинг") ссылке.
