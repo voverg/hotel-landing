@@ -5,12 +5,39 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+/*Класс для эффекта подчёркивания ссылок при наведении*/
+.link {
+    position: relative;
+}
+
+.link:before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #cdff54;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+
+.link:hover:before {
+    width: 100%;
+    transform: scaleX(1);
+}
+
 header {
     width: 100%;
     min-height: 100vh;
     background: #000 url('../img/header_background.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 30px;
     /*position: relative;*/
     box-shadow:0 0 0 500px rgba(0, 0, 0, 0.7) inset;
 }
@@ -49,15 +76,12 @@ header {
 
 .main-nav li {
     list-style-type: none;
+    min-height: 150px;
 }
 
 .main-nav-item {
-    display: block;
-    min-height: 150px;
-    text-decoration: none;
     color: #fff;
     font-size: 18px;
-    font-weight: bold;
     line-height: 90px;
     vertical-align: middle;
 }
@@ -245,6 +269,22 @@ form input[placeholder] {
 .burger-menu_active .burger-menu__overlay {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*Footer*/
+footer {
+    background-color: #101f29;
+    padding: 30px;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #cdff54;
 }
 
 
