@@ -13,7 +13,6 @@ a {
 .link {
     position: relative;
 }
-
 .link:before {
     content: '';
     bottom: 0;
@@ -25,7 +24,6 @@ a {
     transition: 0.2s;
     transform: scaleX(0);
 }
-
 .link:hover:before {
     width: 100%;
     transform: scaleX(1);
@@ -34,10 +32,10 @@ a {
 header {
     width: 100%;
     min-height: 95vh;
+    padding-bottom: 30px;
     background: #000 url('../img/header_background.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding-bottom: 30px;
     /*position: relative;*/
     box-shadow:0 0 0 500px rgba(0, 0, 0, 0.7) inset;
 }
@@ -56,11 +54,9 @@ header {
 .container {
     max-width: 1170px;
 }
-
 .center {
     margin: 0 auto;
 }
-
 .right{
     float: right;
 }
@@ -78,14 +74,12 @@ header {
     list-style-type: none;
     min-height: 150px;
 }
-
 .main-nav-item {
     color: #fff;
     font-size: 18px;
     line-height: 90px;
     vertical-align: middle;
 }
-
 .main-nav-item:hover {
     color: #cdff54;
 }
@@ -105,16 +99,13 @@ header {
     color: #fff;
     width: 70%;
 }
-
 .right-side h1 {
     font-size: 32px;
 }
-
 .right-side p {
     line-height: 1.5rem;
     margin-top: 20px;
 }
-
 
 /* Стили формы */
 .form-wrapper {
@@ -125,37 +116,30 @@ header {
     padding: 30px 20px;
     border-radius: 3px;
 }
-
 .form-group {
     padding: 10px 0;
 }
-
 .form-group label {
     padding-left: 1%;
 }
-
 form label {
     font-size: 12px;
     font-weight: bold;
 }
-
 form input, form select {
     width: 100%;
     height: 30px;
     border: 1px solid #aaa;
     border-radius: 3px;
 }
-
 .form-text {
     width: 98%;
     display: block;
     margin: 0 auto;
 }
-
 form input[placeholder] {
     padding-left: 10px;
 }
-
 .send {
     width: 100%;
     height: 40px;
@@ -181,7 +165,6 @@ form input[placeholder] {
     background-color: #101f29;
     transition: 0.4s;
 }
-
 .burger-menu__lines,
 .burger-menu__lines::after,
 .burger-menu__lines::before {
@@ -190,38 +173,31 @@ form input[placeholder] {
     height: 6px;
     background-color: #fff;
 }
-
 .burger-menu__lines {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .burger-menu__lines::before {
     content: '';
     top: -15px;
 }
-
 .burger-menu__lines::after {
     content: '';
     top: 15px;
 }
-
 .burger-menu_active .burger-menu__button,
 .burger-menu_active .burger-menu__lines {
     background-color: transparent;
 }
-
 .burger-menu_active .burger-menu__lines::before {
     top: 0;
     transform: rotate(45deg);
 }
-
 .burger-menu_active .burger-menu__lines::after {
     top: 0;
     transform: rotate(-45deg);
 }
-
 .burger-menu__nav {
     /*min-width: 40%;*/
     padding-top: 80px;
@@ -235,11 +211,9 @@ form input[placeholder] {
     left: -100%;
     transition: 0.5s;
 }
-
 .burger-menu_active .burger-menu__nav {
     left: 0;
 }
-
 .burger-menu__link {
     /*margin: 0 auto;*/
     padding: 15px 30px;
@@ -251,11 +225,9 @@ form input[placeholder] {
     font-weight: bold;
     color: #fff;
 }
-
 .burger-menu__link:hover {
     filter: brightness(0.7);
 }
-
 .burger-menu__overlay {
     display: none;
     position: fixed;
@@ -265,7 +237,6 @@ form input[placeholder] {
     height: 100vh;
     z-index: 10;
 }
-
 .burger-menu_active .burger-menu__overlay {
     display: block;
     background-color: rgba(0, 0, 0, 0.1);
@@ -275,19 +246,16 @@ form input[placeholder] {
 #conditions {
     position: relative;
 }
-
 .conditions-container {
     positon: absolute;
     /*border: 1px solid black;*/
     margin-top: -80px;
     padding: 30px;
 }
-
 .conditions-item {
     padding: 0 10px;
     /*border: 1px solid grey;*/
 }
-
 .conditions-item img {
     display: block;
     width: 50%;
@@ -296,16 +264,15 @@ form input[placeholder] {
     border-radius: 50%;
     margin: 10px auto 30px;
 }
-
 .conditions-item h3 {
     text-align: center;
     font-size: 26px;
     color: #777;
 }
-
 .conditions-item p {
     padding: 10px 15px;
     color: #777;
+    text-align: center;
 }
 
 /*Footer*/
@@ -314,11 +281,9 @@ footer {
     padding: 30px;
     color: #fff;
 }
-
 footer p {
     text-align: center;
 }
-
 footer a {
     color: #cdff54;
 }
@@ -350,6 +315,9 @@ footer a {
         width: 95%;
     }
     /*Conditions section*/
+    .conditions-container {
+        margin-top: -60px;
+    }
     .conditions-item img {
         height: 20vh;
     }
@@ -374,11 +342,15 @@ footer a {
     }
     /*Conditions section*/
     .conditions-container {
-        margin-top: 20px;
+        margin-top: 0;
         padding: 20px;
+        background: #000 url('../img/header_background.jpg') no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        box-shadow:0 0 0 500px rgba(0, 0, 0, 0.7) inset;
     }
     .conditions-item {
-        border: 3px solid #aaa;
+        background-color: #fff;
         margin-bottom: 20px;
         padding: 20px;
     }
