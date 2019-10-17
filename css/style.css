@@ -33,7 +33,7 @@ a {
 
 header {
     width: 100%;
-    min-height: 100vh;
+    min-height: 95vh;
     background: #000 url('../img/header_background.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -53,12 +53,12 @@ header {
     background-size: cover;
 }*/
 
-.center {
-    margin: 0 auto;
-}
-
 .container {
     max-width: 1170px;
+}
+
+.center {
+    margin: 0 auto;
 }
 
 .right{
@@ -271,6 +271,42 @@ form input[placeholder] {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/*Conditions section*/
+#conditions {
+    position: relative;
+}
+
+.conditions-container {
+    positon: absolute;
+    /*border: 1px solid black;*/
+    margin-top: -80px;
+    padding: 30px;
+}
+
+.conditions-item {
+    padding: 0 10px;
+    /*border: 1px solid grey;*/
+}
+
+.conditions-item img {
+    display: block;
+    width: 50%;
+    height: 25vh;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 10px auto 30px;
+}
+
+.conditions-item h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #777;
+}
+
+.conditions-item p {
+    padding: 10px 15px;
+    color: #777;
+}
 
 /*Footer*/
 footer {
@@ -313,6 +349,10 @@ footer a {
         margin: 20px auto 0;
         width: 95%;
     }
+    /*Conditions section*/
+    .conditions-item img {
+        height: 20vh;
+    }
 }
 
 @media (max-width: 720px) {
@@ -326,11 +366,26 @@ footer a {
     form input, form select {
         height: 40px;
     }
-
     .send {
         display: block;
         width: 98%;
         margin: 20px auto;
         height: 50px;
+    }
+    /*Conditions section*/
+    .conditions-container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .conditions-item {
+        border: 3px solid #aaa;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .conditions-item img {
+        height: 50vh;
+    }
+    .conditions-item h3 {
+        font-size: 36px;
     }
 }
