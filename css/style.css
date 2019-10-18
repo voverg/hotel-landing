@@ -150,6 +150,7 @@ form input[placeholder] {
     margin-bottom: 20px;
     color: #fff;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* Бургер меню */
@@ -349,14 +350,19 @@ footer a {
         box-shadow:0 0 0 500px rgba(0, 0, 0, 0.7) inset;
     }
     .conditions-item {
-        background-color: #fff;
+        /*background-color: #fff;*/
         margin-bottom: 20px;
         padding: 20px;
+        border-bottom: 2px solid #aaa;
     }
     .conditions-item img {
         width: 95%;
         height: 300px;
         border-radius: 30px;
+    }
+    .conditions-item h3,
+    .conditions-item p {
+        color: #fff;
     }
     .conditions-item h3 {
         font-size: 36px;
