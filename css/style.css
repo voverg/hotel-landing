@@ -248,18 +248,16 @@ form input[placeholder] {
 }
 .conditions-container {
     positon: absolute;
-    /*border: 1px solid black;*/
     margin-top: -80px;
     padding: 30px;
 }
 .conditions-item {
     padding: 0 10px;
-    /*border: 1px solid grey;*/
 }
 .conditions-item img {
     display: block;
-    width: 50%;
-    height: 25vh;
+    width: 200px;
+    height: 200px;
     border: 5px solid #fff;
     border-radius: 50%;
     margin: 10px auto 30px;
@@ -319,7 +317,8 @@ footer a {
         margin-top: -60px;
     }
     .conditions-item img {
-        height: 20vh;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -355,7 +354,9 @@ footer a {
         padding: 20px;
     }
     .conditions-item img {
-        height: 50vh;
+        width: 95%;
+        height: 300px;
+        border-radius: 30px;
     }
     .conditions-item h3 {
         font-size: 36px;
