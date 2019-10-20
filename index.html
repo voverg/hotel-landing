@@ -36,11 +36,11 @@
     <!-- Конец секции с бургер меню -->
 
     <header id='header-main'>
-        <div class="container center">
-            <div class="row">
-                <div class="col-3 logo">
+        <div class="fix-header">
+            <div class="container center row">
+                <a href="#header-main" class="col-3 logo">
                     <img src="img/logo.png" alt="logo">
-                </div>
+                </a>
                 <nav class="col-6 main-nav">
                     <ul class="row">
                         <li class="col-3"><a href="#conditions" class="main-nav-item link">Условия</a></li>
@@ -54,74 +54,74 @@
                         +7-999-999-99-99</p>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div class="col-6 right">
-                    <div class="right-side">
-                        <h1>Забронируйте номер прямо сейчас</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in sapiente earum recusandae id est architecto, culpa, mollitia quisquam quo, vitae eligendi nihil! Mollitia deleniti vitae earum excepturi, praesentium enim.</p>
-                    </div>
+        <div class="container center row">
+            <div class="col-6 right">
+                <div class="right-side">
+                    <h1>Забронируйте номер прямо сейчас</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit in sapiente earum recusandae id est architecto, culpa, mollitia quisquam quo, vitae eligendi nihil! Mollitia deleniti vitae earum excepturi, praesentium enim.</p>
                 </div>
-                <div class="col-6">
-                    <div class="form-wrapper">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="form-text">Ваше направление</label>
-                                <input type="text" class="form-text" id="form-text" placeholder="Ваше направление">
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="form-date">Дата заезда</label>
-                                        <input type="date" class="form-date" id="form-date" placeholder="Enter email">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="form-date">Дата отъезда</label>
-                                        <input type="date" class="form-date" id="form-date" placeholder="Enter email">
-                                    </div>
+            </div>
+            <div class="col-6">
+                <div class="form-wrapper">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="form-text">Ваше направление</label>
+                            <input type="text" class="form-text" id="form-text" placeholder="Ваше направление">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="form-date">Дата заезда</label>
+                                    <input type="date" class="form-date" id="form-date" placeholder="Enter email">
                                 </div>
                             </div>
-                            <div class="row">
-                                  <div class="col-4">
-                                    <div class="form-group">
-                                        <label for="room">Комнаты</label><br>
-                                        <select name="room" id="room">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-group">
-                                        <label for="adult">Взрослые</label><br>
-                                        <select name="adult" id="adult">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-group">
-                                        <label for="kids">Дети</label><br>
-                                        <select name="kids" id="kids">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="form-date">Дата отъезда</label>
+                                    <input type="date" class="form-date" id="form-date" placeholder="Enter email">
                                 </div>
                             </div>
-                            <button class="send" id="send">Посмотреть</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="row">
+                              <div class="col-4">
+                                <div class="form-group">
+                                    <label for="room">Комнаты</label><br>
+                                    <select name="room" id="room">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="adult">Взрослые</label><br>
+                                    <select name="adult" id="adult">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <label for="kids">Дети</label><br>
+                                    <select name="kids" id="kids">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="send" id="send">Посмотреть</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -197,6 +197,7 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="libs/slick/slick.min.js"></script>
+    <script src="js/headhesive.min.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/script.js"></script>
 </body>

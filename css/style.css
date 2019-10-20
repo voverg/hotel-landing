@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -33,7 +34,7 @@ header {
     width: 100%;
     min-height: 95vh;
     padding-bottom: 30px;
-    background: #000 url('../img/header_background.jpg') no-repeat;
+    background: #101f29 url('../img/header_background.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
     /*position: relative;*/
@@ -62,30 +63,29 @@ header {
 }
 
 /*Верхняя часть header*/
+.fix-header {
+    width: 100%;
+    padding: 30px 0 100px;
+}
 .logo {
-    padding-top: 20px;
+    display: block;
     text-align: center;
 }
 .logo img {
     width: 70%;
+    transition: 01s;
 }
-
 .main-nav li {
     list-style-type: none;
-    min-height: 150px;
 }
 .main-nav-item {
     color: #fff;
     font-size: 18px;
-    line-height: 90px;
+    line-height: 50px;
     vertical-align: middle;
 }
 .main-nav-item:hover {
     color: #cdff54;
-}
-
-.tel {
-    padding: 15px 50px 15px 0;
 }
 .tel p {
     color: #cdff54;
@@ -93,6 +93,33 @@ header {
     font-weight: bold;
     text-align: right;
 }
+/*Анимированная шапка при прокрутке*/
+.headhesive {
+    background-color: #101f29;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0 30px;
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 10;
+}
+.headhesive--stick {
+    background-color: #101f29;
+    padding: 5px 0;
+    opacity: 1;
+}
+.headhesive--stick .logo img {
+    width: 65%;
+}
+.headhesive--stick p,
+.headhesive--stick a {
+    font-size: 14px;
+}
+.headhesive--stick .main-nav-item {
+    line-height: 40px;
+}
+
+
 
 /* Стили блока с описанием */
 .right-side {
@@ -346,6 +373,9 @@ footer a {
 
 /* Responsive css */
 @media (max-width: 960px) {
+    .headhesive {
+        display: none;
+    }
     .logo {
         text-align: right;
     }

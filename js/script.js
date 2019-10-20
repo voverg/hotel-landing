@@ -1,3 +1,9 @@
+// Animation head (headhesive)
+var options = {
+  offset: 600
+}
+var header = new Headhesive('.fix-header', options);
+
 // Slick-slider settings
 $(document).ready(function(){
   $('.sl').slick({
