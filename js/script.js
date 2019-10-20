@@ -1,6 +1,6 @@
 // Animation head (headhesive)
 var options = {
-  offset: 600
+  offset: 500
 }
 var header = new Headhesive('.fix-header', options);
 
