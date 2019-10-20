@@ -65,7 +65,7 @@ header {
 /*Верхняя часть header*/
 .fix-header {
     width: 100%;
-    padding: 30px 0 100px;
+    padding: 30px 0 80px;
 }
 .logo {
     display: block;
@@ -95,17 +95,19 @@ header {
 }
 /*Анимированная шапка при прокрутке*/
 .headhesive {
-    background-color: #101f29;
+    background-color: rgba(16, 31, 41, 0.9);
     position: fixed;
     width: 100%;
-    padding: 30px 0 30px;
-    transition: 0.3s;
+    padding: 0;
+    transition: 0.5s;
+    transform: translateY(-100%);
     opacity: 0;
     z-index: 10;
 }
 .headhesive--stick {
-    background-color: #101f29;
+    background-color: rgba(16, 31, 41, 0.9);
     padding: 5px 0;
+    transform: translateY(0);
     opacity: 1;
 }
 .headhesive--stick .logo img {
@@ -118,8 +120,6 @@ header {
 .headhesive--stick .main-nav-item {
     line-height: 40px;
 }
-
-
 
 /* Стили блока с описанием */
 .right-side {
@@ -275,12 +275,11 @@ form input[placeholder] {
 
 /*Conditions section*/
 #conditions {
-    position: relative;
+    /*position: relative;*/
 }
 .conditions-container {
-    positon: absolute;
     margin-top: -80px;
-    padding: 30px;
+    padding: 40px;
 }
 .conditions-item {
     padding: 0 10px;
@@ -313,11 +312,17 @@ form input[placeholder] {
     font-size: 40px;
     text-align: center;
     color: #555;
-    padding-top: 30px;
+    padding-top: 40px;
+}
+p.galery__paragraph {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 .sl {
     max-width: 90%;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 .sl-item {
     position: relative;
@@ -373,6 +378,12 @@ footer a {
 
 /* Responsive css */
 @media (max-width: 960px) {
+    header {
+        padding-bottom: 70px;
+    }
+    .fix-header {
+        padding: 30px 0 0;
+    }
     .headhesive {
         display: none;
     }
@@ -388,7 +399,7 @@ footer a {
 
     .tel {
         min-height: 120px;
-        padding: 25px 50px 15px 0;
+        padding: 0 50px 0 0;
 }
     .tel p {
         font-size: 24px;
@@ -414,8 +425,15 @@ footer a {
 }
 
 @media (max-width: 720px) {
+    header {
+        padding-bottom: 50px;
+    }
     .logo {
         padding-right: 5%;
+    }
+    .tel {
+        padding: 0 40px;
+        min-height: 50px;
     }
     .form-group {
         padding: 3px 0;
@@ -458,6 +476,9 @@ footer a {
         font-size: 36px;
     }
     /*Galery*/
+    p.galery__paragraph {
+        width: 90%;
+    }
     .sl-item img, .sl-text {
         width: 100%;
     }
