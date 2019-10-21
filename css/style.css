@@ -362,6 +362,43 @@ p.galery__paragraph {
     font-size: 16px;
 }
 
+/*Blog*/
+#blog {
+    padding: 30px 40px;
+}
+.blog__row {
+    padding: 20px 20px 50px;
+    border-bottom: 1px solid #ddd;
+}
+.blog__row:last-child {
+    border: none;
+}
+h2 {
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    font-size: 36px;
+}
+.blog__row img {
+    width: 100%;
+    padding-top: 20px;
+}
+.blog__row h3 {
+    color: #555;
+    font-size: 26px;
+    padding: 20px 0 10px;
+}
+.blog__row p a {
+    display: block;
+    margin-top: 5px;
+    color: #af3838;
+    font-weight: bold;
+}
+.blog__row p a:hover {
+    color: #d82222;
+    text-decoration: underline;
+}
+
 /*Footer*/
 footer {
     background-color: #101f29;
