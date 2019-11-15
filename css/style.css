@@ -237,7 +237,7 @@ form input[placeholder] {
 }
 .burger-menu__nav {
     min-width: 50%;
-    padding-top: 80px;
+    padding-top: 100px;
     position: fixed;
     z-index: 20;
     display: flex;
