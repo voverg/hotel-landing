@@ -257,7 +257,7 @@ form input[placeholder] {
     padding: 15px 20px;
     border-bottom: 1px solid #fff;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.2em;
     text-decoration: none;
     text-transform: uppercase;
@@ -632,7 +632,7 @@ footer a {
     .conditions-item {
         /*background-color: #fff;*/
         margin-bottom: 20px;
-        padding: 20px;
+        padding: 20px 0;
         border-bottom: 2px solid #aaa;
     }
     .conditions-item:last-child {
@@ -661,12 +661,18 @@ footer a {
         padding: 20px 20px 10px;
     }
     /*blog*/
+    #blog {
+        padding: 30px 20px;
+    }
     .blog__row {
         padding: 20px 0 50px;
     }
+    #contacts {
+        padding: 30px 20px;
+    }
     /*Social*/
     span.contacts__phone {
-        font-size: 38px;
+        font-size: 34px;
     }
     .form {
         width: 100%;
